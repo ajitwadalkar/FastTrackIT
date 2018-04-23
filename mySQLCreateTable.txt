@@ -1,0 +1,21 @@
+CREATE TABLE `inventory` (
+  `inv_id` int(11) NOT NULL AUTO_INCREMENT,
+  `inv_UPA` varchar(10) NOT NULL,
+  `inv_thumbnail` varchar(15) NOT NULL,
+  `inv_rtn_qty` int(11) DEFAULT '0',
+  `inv_seller` varchar(5) DEFAULT '',
+  `inv_item_brand` varchar(50) DEFAULT '',
+  `inv_item_desc` varchar(500) DEFAULT '',
+  `inv_Amount` float NOT NULL DEFAULT '0',
+  `inv_model` varchar(30) DEFAULT '',
+  `inv_load` int(11) NOT NULL DEFAULT '0',
+  `inv_width` float DEFAULT '0',
+  `inv_depth` float DEFAULT '0',
+  `inv_height` float DEFAULT '0',
+  `inv_weight` float DEFAULT '0',
+  `inv_additional_info` varchar(200) DEFAULT '',
+  `inv_todo` varchar(10) DEFAULT '',
+  PRIMARY KEY (`inv_id`),
+  UNIQUE KEY `inv_UPA_UNIQUE` (`inv_UPA`)
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=latin7;
+
